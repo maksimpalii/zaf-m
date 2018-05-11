@@ -61,10 +61,8 @@ $("#button_share").on("click",function(){
     return false;
 });
 
-
+/*
 $('#spis_1_h_inn').click(function () {
-    // var twes05li2_ = TweenMax.to($('#spis_2 .goodsm'), 0.7, {"filter": "blur(5px)", "transform": "translateX(-100px) translateY(0px)", yoyo: false, repeat: 0, ease: Power2.easeIn});
-    // var twes05li3_ = TweenMax.to($('#spis_3 .goodsm'), 0.7, {"filter": "blur(5px)", "transform": "translateX(-100px) translateY(0px)", yoyo: false, repeat: 0, ease: Power2.easeIn});
     $('#spis_2').velocity({opacity: 0}, {duration: 500, easing: 'easeInSine'});
     $('#spis_3').velocity({opacity: 0}, {
         duration: 500, easing: 'easeInSine', complete: function () {
@@ -113,7 +111,45 @@ $('#spis_3 .close').click(function () {
 
 });
 
+*/
+
+$(document).ready(function($) {
+    $('#accordion').find('.accordion-toggle').click(function(){
+
+        //Expand or collapse this panel
+        $(this).next().slideToggle('fast');
+
+        //Hide the other panels
+        $(".accordion-content").not($(this).next()).slideUp('fast');
+
+    });
+});
 /* Click Butirat End */
+
+
+$("#mobclose").click(function() {
+    $('#mobmenu').removeClass('active');
+});
+
+$("#header_nav__burger").click(function() {
+    $('#mobmenu').addClass('active');
+});
+
+$("#mob_inn ul li:first-child a").click(function(e) {
+    e.preventDefault();
+    $('#mobmenu').removeClass('active');
+    $('html, body').animate({
+        scrollTop: $("#section5").offset().top
+    }, 1000);
+});
+
+$("#mob_inn ul li:nth-child(3) a").click(function(e) {
+    e.preventDefault();
+    $('#mobmenu').removeClass('active');
+    $('html, body').animate({
+        scrollTop: $("#section7").offset().top
+    }, 1000);
+});
 
 
 

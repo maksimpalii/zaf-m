@@ -45,26 +45,24 @@ body {
   width: 100%;
   position: fixed;
   z-index: 100;
-  height: 70px;
+  height: 50px;
   font-family: 'PT Sans', sans-serif;
 
 }
 
 #delimiter {
   width: 2px;
-  height: 0%;
+  height: 100%;
   background: #d2242b;
   margin: 0 6px;
-  position: absolute;
-  left: 65px;
 }
 
 #topMenu_inn {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  height: 70px;
-  width: 320px;
+  height: 50px;
+  width: 95%;
   margin: 0 auto;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
@@ -83,7 +81,7 @@ body {
 
 #header_logo {
   color: #20a91b;
-  font-size: 26px;
+  font-size: 22px;
   font-weight: 600;
   padding-right: 20px;
   opacity: 1;
@@ -98,10 +96,9 @@ body {
 
 #header_slogan {
   color: #20a91b;
-  font-size: 14px;
-  width: 130px;
-  line-height: 14px;
-  margin-left: -10px;
+  font-size: 9px;
+  line-height: 9px;
+  margin-left: -12px;
   opacity: 1;
 }
 
@@ -111,29 +108,96 @@ body {
 }
 
 #header_nav__lang {
-  width: 75px;
   position: relative;
-  height: 21px;
+  height: 16px;
+  padding: 0;
 }
 
 #header_nav__lang li {
 }
 
 #lang_ru {
-  opacity: 0;
-  right: 35px;
-  position: absolute;
+  right: 55px;
 }
 
 #lang_ukr {
-  opacity: 0;
+  right: 0px;
+}
+#mobmenu{
+
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-image: url('/assets/img/back_mob.jpg');
+background-repeat: no-repeat;
+  background-size:cover;
+  transition: all 0.5s ease-in-out;
+  top: -100%;
+}
+#mobmenu.active{
+  top:0;
+}
+#header_nav__burger{
+  width: 25px;
+  display: block;
+ }
+#header_nav__burger span{
+  display: block;
+  width: 100%;
+  height: 3px;background: #3eddd6;
+  margin: 4px 0;
+}
+#mob_inn{
   position: absolute;
-  right: 15px;
+  width: 90%;
+  height: 50%;
+  max-height: 240px;
+  @include centered();
+}
+#mob_inn ul{list-style: none;margin: 0;padding: 0;    height: 100%;
+text-align: center; display: flex;    flex-direction: column;justify-content: space-around;
+}
+
+ #mob_inn ul li a{color: #ffffff; font-size: 25px;     font-family: 'PT Sans', sans-serif;
+  text-decoration: none;
+}
+#mobclose{
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  z-index:100;
+  top:5%;
+  right: 5%;
+  &:before{
+    position: absolute;
+    content: '';
+    width: 30px;
+    height: 5px;
+    background-color: #3eddd6;
+    display: block;
+    transform-origin: 100% 0;
+    margin-top: -10px;
+    transform: rotate(-45deg);
+  }
+  &:after{
+    position: absolute;
+    content: '';
+    width: 30px;
+    height: 5px;
+    background-color: #3eddd6;
+    display: block;
+    margin-top: 10px;
+    transform-origin: 100% 100%;
+    transform: rotate(45deg);
+  }
 }
 
 #header_nav__items li a, #header_nav__lang li a {
   color: #6d6e71;
-  font-size: 19px;
+  font-size: 14px;
   text-decoration: none;
   display: block;
   position: relative;
@@ -521,20 +585,17 @@ z-index: 10;
 #section1{
   position: relative;
   clear: both;
-  float: left;
+float: left;
 }
 #section1-2{
   position:relative;
   clear: both;
-  float: left;
+float: left;
 }
-#section2{
-  position:relative;
-  clear: both;
-  float: left;
-}
+
 #section1-2 .item_sl1{
   top: 170px
+
 }
 #fon_1{
   width: 100%;
@@ -552,7 +613,7 @@ z-index: 10;
 }
 
 h1 {
-  font-size: 28px;
+  font-size: 25px;
   font-weight: normal;
   font-family: 'PT Sans', sans-serif;
   color: #ffffff;

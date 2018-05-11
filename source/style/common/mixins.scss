@@ -8,7 +8,12 @@ $varCircHtml5: 0.85;
 @mixin round(){
   border-radius: 50%;
 }
-
+@mixin fontsmall(){
+  font-size: 14px;
+}
+@mixin fontmedium(){
+  font-size: 17px;
+}
 @mixin centered($axis:'both'){
   @if ($axis == 'both'){
     top:50%;

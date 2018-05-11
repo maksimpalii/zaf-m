@@ -1,24 +1,35 @@
+#section7{
+  position: relative;
+  clear: both;
 
-.content-map {
-  position: absolute;
-  width: 970px;
-  height: 65%;
-  @include centered();
 }
-
-.footer {
+#sec7{
+  margin-top: 70px;
+  position: relative;
   width: 100%;
-  height: 20%;
+  display: inline-block;
+}
+.content-map {
+
+  width: 100%;
+  height: 900px;
+  margin-bottom: 50px;
+
+}
+#fotter{    position: absolute;
   bottom: 0;
-  position: absolute;
+  z-index: -1;}
+.footer {
+position: relative;
+  margin-top: 40px;
+  height: 100px;
 }
 
 .footer_inn {
-  position: absolute;
-  width: 75%;
-  @include centered();
+
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  padding-top: 70px;
 }
 
 .footer_inn a {
@@ -29,19 +40,16 @@
 }
 
 #button6 {
-  position: absolute;
+  position: relative;
   width: 250px;
   height: 65px;
-  bottom: 30%;
-  left: 80px;
+margin: 0 auto;
   opacity: 1;
   border-radius: 35px;
   overflow: hidden;
   cursor: pointer;
   outline: none;
-  @include notebook() {
-    bottom: 5%;
-  }
+
 }
 
 #button6 #fbutt_cont {

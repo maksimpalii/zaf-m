@@ -1,40 +1,47 @@
+#section5{
+  position: relative;
+  clear: both;
+  float: left;
+  background-image: url(/assets/img/sec5.jpg);
+  background-position: top center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #659cca;
+  padding-bottom: 60px;
+}
 #dirapack{
-  position: absolute;
-  width: 28%;
-  height: 50%;
-  left: 13%;
-  bottom: 10%;
-  z-index: 10;
+  width: 85%;
+  left: 5%;
+  margin: 20% auto 0 auto;
+  display: inline-block;
+  position: relative;
+
 }
 #dirapack_ov{
   width: 100%;
   height: 100%;
-  position: absolute;
+
   z-index: 10;
 
 }
 .ovsst0, .ovsst2, .ovsst4{
   transform-origin: center;
-  transform: scale(0);
+
 }
-#ftext_5{opacity: 0;}
+#ftext_5{opacity: 1;}
 #pilul{
   position: absolute;
   z-index: 10;
   width: 15%;
-  transform: scale(0);
-
-  left: 45%;
-  top: 45%;
+  left: 0%;
+  top: 6%;
 }
 #pilul2{
   position: absolute;
   z-index: 10;
   width: 15%;
-  transform: scale(0);
-
-  right: 45%;
-  bottom: 45%;
+  right: 0%;
+  bottom: 5%;
 }
 #pilul2_in{
   transform: rotate(90deg);
@@ -44,32 +51,32 @@
   width: 50%;
   right: 3%;
   z-index: 10;
-  transform: scale(0);
+  top: -10%;
+
 }
 #sec5_txt{
-  position: absolute;
-  width: 28%;
-  height: 50%;
-  right: 20%;
-  bottom: 10%;
-  z-index: 10;
+
+  width: 85%;
+margin: 0 auto;
+
 }
 #ftext_5 h1{text-transform: uppercase;    color: #3eddd6;
 }
-#sec5_txt #ftext_op{color: #ffffff;opacity: 0;}
-#sec5_txt #ftext_op p{font-size: 18px;}
-#button5{    position: absolute;
-  width: 310px;
+#sec5_txt #ftext_op{color: #ffffff;opacity: 1;}
+#sec5_txt #ftext_op p{
+  @include fontsmall();
+}
+#button5{       position: relative;
+  width: 230px;
   height: 65px;
-  opacity: 0;
-  margin-top: 60px;
+  margin: 15% auto 0 auto;
   border-radius: 35px;
   overflow: hidden;
   cursor: pointer;
   outline: none;}
 #button5 #btn_text{
-  color: #ffffff;}
-
+  color: #ffffff;left: 58%;}
+#button5 #fbutt_cont{width: 230px;}
 #button5:hover #btn_contur {
   bottom: 0%;
 }
@@ -82,22 +89,17 @@
   stroke: #3c8e5b;
 }
 #sec5_half{
-  width: 50%;
-  height: 50%;
-  left: 50%;
-  top:0;
-  z-index: 0;
-  @include centered('y');
+position: relative;
 }
 #packpill{
   width: 303px;
   height: 232px;
   position: absolute;
-  left: 25%;
-  top: 25%;
+  left: -3%;
+  top: 3%;
   z-index: 10;
   transform-origin: center;
-  transform: scale(0);
+  transform: scale(0.6);
 }
 #packpill_in{
   width: 303px;
@@ -116,29 +118,37 @@
 }
 
 #sec5_half_inn{
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  position: absolute;
+  width: 85%;
+  margin: 0 auto;
 }
-#spis_1{  display: flex;    align-items: center; }
-#spis_2{ display: flex;    align-items: center;padding: 40px 0;}
-#spis_3{ display: flex;    align-items: center;}
-.goodsm{    width: 100px;    transform: matrix(1, 0, 0, 1, 0, 0);}
+#dirapack.dbl {    margin: 20% auto 0 auto;}
+#dirapack.dbl #packpill_in{transform: rotateZ(0deg);}
+#dirapack.dbl .back_osnova{    right: -25%;}
+#dirapack.dbl #packpill{      left: -22%;}
+#spis_1{position: relative;    margin: 40px 0;}
+#spis_2{ position: relative;    margin: 40px 0;}
+#spis_3{position: relative;    margin: 40px 0;}
+.goodsm{     width: 32px;       position: absolute;
+  top: -3px;}
 .close{width: 35px;    position: absolute; cursor: pointer;
   top: -105px;
   right: -20px;}
-#spis_1_h_inn, #spis_2_h_inn, #spis_3_h_inn{color:#ffffff;    font-family: 'PT Sans', sans-serif;font-size: 24px;text-transform: uppercase;transition: all 0.3s ease-in-out;}
+#spis_1_h_inn, #spis_2_h_inn, #spis_3_h_inn{color:#ffffff;     padding-left: 45px;   font-family: 'PT Sans', sans-serif;text-transform: uppercase;transition: all 0.3s ease-in-out;
+@include fontmedium();
+}
+.accordion-toggle {cursor: pointer;}
+.accordion-content {display: none;}
+.accordion-content.default {display: block;}
+
 #spis_1_h{ cursor: pointer; }
 #spis_2_h{ cursor: pointer; }
 #spis_3_h{ cursor: pointer; }
 #spis_1_h:hover #spis_1_h_inn{    color: #4fe1d2;}
 #spis_2_h:hover #spis_2_h_inn{    color: #4fe1d2;}
 #spis_3_h:hover #spis_3_h_inn{    color: #4fe1d2;}
-#spis_1_tx{  color: #ffffff; display: none;position: absolute; margin-top: 20px;font-size: 18px;}
-#spis_2_tx{  color: #ffffff;display: none;position: absolute; margin-top: 20px;font-size: 18px;}
-#spis_3_tx{ color: #ffffff;display: none;position: absolute; margin-top: 20px;font-size: 18px;}
+#spis_1_tx{    padding-left: 46px;  color: #ffffff;  margin-top: 20px; @include fontsmall();}
+#spis_2_tx{    padding-left: 46px;  color: #ffffff; display: none; margin-top: 20px;@include fontsmall();}
+#spis_3_tx{    padding-left: 46px; color: #ffffff;  display: none;margin-top: 20px;@include fontsmall();}
 
 #pharm_union_dop{  width: 100px;
   position: absolute;

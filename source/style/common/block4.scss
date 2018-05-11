@@ -1,17 +1,21 @@
 /* block 4 */
+#section4{
+  position: relative;
+  clear: both;
+  float: left;
+}
 #sec4{
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
+  display: block;
+  position: relative;
 }
 
-#sec4_half{height: 100%;
+#sec4_half{
   width: 100%;
-  z-index: -1;
-  top: 0%;    left: 0;}
+  top: 36%;
+  position: absolute;
+}
 
-#ftext_4{opacity: 0; margin-top: 50px;    position: absolute;      left: 22%;
+#ftext_4{ margin-top: 50px;    position: absolute;      left: 22%;
   top: 44%;}
 
 #ftext_4 h1{text-transform: uppercase;
@@ -25,10 +29,12 @@
   transition: background 2.5s ease;
   width: 430px;position: absolute;
   display: block;
-  top: 0px;    left: 14%;
+
   color: #fff;}
 
-#ftext_04{opacity: 0; margin-top: 50px;    position: absolute;         top: 13%;
+#ftext_04{
+  position: absolute;
+  margin-top: 50%;
   width: 100%;
   text-align: center;}
 
@@ -70,8 +76,8 @@
 #dir4_small{transform:scale(0);transform-origin: center;}
 
 
-#dira5{    width: 187px;
-  height: 240px;
+#dira5{       width: 100px;
+  height: 100px;
   position: absolute;
   top: 70px;
   left: 34px;-moz-transform: scale(-1, 1);
@@ -80,9 +86,9 @@
   transform: scale(-1, 1);
   filter: FlipH;
   -ms-filter: "FlipH";}
-#dir5_big{transform:scale(0); transform-origin: center;}
-#dir5_med{transform:scale(0);transform-origin: center;}
-#dir5_small{transform:scale(0);transform-origin: center;}
+#dir5_big{ transform-origin: center;}
+#dir5_med{transform-origin: center;}
+#dir5_small{;transform-origin: center;}
 
 
 #man3{width:243px;height:145px;position:absolute;top:50px;left:40px;transform:scale(0);    transform-origin: 100px 100px 0;}
@@ -99,11 +105,13 @@
   right: 25%;
 }
 
-#man5{width:190px;height:145px;position:absolute;top:50px;left:40px;transform:scale(0);    transform-origin: 100px 100px 0;}
+#man5{width:100px;height:100px;position:absolute;top:50px;left:40px;  transform-origin: 100px 100px 0;}
 #man5 svg{transform:translate3d(0px, 0px, 0px);}
 #diraman5{     position: absolute;
-  left: 22%;
-  top: 66%;}
+  right: 20%;
+  margin-top: 169%;
+  width: 100px;
+}
 
 
 .mn3st0{fill:none;stroke:#23B993;stroke-width:18;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
@@ -191,18 +199,21 @@
 }
 
 .triang2{    position: absolute;    z-index: 10;}
-.thd{    font-size: 25px;
-  color: #2f508c;
+.thd{     @include fontmedium();
+  color: #2f508c;    word-wrap: break-word;
   font-family: 'PT Sans', sans-serif;
   text-transform: uppercase;}
-.thdop{    font-size: 18px;
+.thdop{    @include fontsmall();
   color: #0b5a6d;}
 
-#h4ic1{    width: 270px;opacity: 0;
+#h4ic1{
+  width: 37%;
   height: 100px;
   position: absolute;
-  top: 12%;
-  left: 40%;}
+  margin-top: 70%;
+  right: 14%;
+  text-align: right;
+}
 #h4ic1 .triang2{
  /* left: -190px;
   top: 56px;*/
@@ -213,17 +224,18 @@
   position: absolute;
  /* left: -175px;
   top: 25px; */
-  left: -59%;
-  top: 28%;
+  left: -82%;
+  top: -22%;
   width: 145px;
   height: 139px;
+
 }
 #h4ic2{
-  width: 270px;opacity: 0;
+  width: 34%;
   height: 100px;
   position: absolute;
-  top: 24%;
-  right: 26%;
+  margin-top: 117%;
+  left: 5%;
 }
 #h4ic2 .triang2{
  /* left: -302px;
@@ -234,19 +246,19 @@
 }
 #h4ic2 .line{
   position: absolute;
-  /*left: -240px;
-  top: 25px; */
-  left: -105%;
-  top: 17%;
-  width: 266px;
-  height: 106px;
+  position: absolute;
+  left: 24%;
+  top: -58%;
+  width: 150px;
+  height: 105px;
 }
 #h4ic3{
-  width: 270px;opacity: 0;
+  width: 32%;
   height: 100px;
   position: absolute;
-  top: 68%;
-  left: 42%;
+  margin-top: 160%;
+  left: 0%;
+  text-align: right;
 }
 #h4ic3 .triang2{
   /* left: 236px;
@@ -258,23 +270,21 @@
 }
 #h4ic3 .line{
   position: absolute;
- /* left: 97px;
-  top: -37px; */
-  left: 36%;
-  top: -34%;
-/*  width: 200px;
-  height: 50px; */
-  width: 238.3px;
-  height: 99.3px;
+  left: 61%;
+  top: -29%;
+  width: 115px;
 }
 
 #h4ic4{
-  width: 270px;opacity: 0;
+  width: 34%;
   height: 100px;
   position: absolute;
-  bottom: 14%;
-  right: 15%;
+  margin-top: 131%;
+  right: 5%;
 }
+
+#h4ic4 .thd{text-align: right;}
+#h4ic4 .ictext{    text-align: right;}
 #h4ic4 .triang2{
   left: -184px;
   top: -7px;
@@ -283,8 +293,8 @@
 #h4ic4 .line{
   position: absolute;
   left: -55%;
-  top: 20%;
-  width: 140px;
+  top: -21%;
+  width: 110px;
   height: 81px;
 }
 
@@ -365,28 +375,28 @@
 /* man_6 end */
 
 
-#h4fic1{    width: 270px;opacity: 0;
+#h4fic1{     width: 34%;
   height: 100px;
   position: absolute;
-  top: 55%;
-  left: 16%;}
+  margin-top: 213%;
+  left: 5%;
+}
 #h4fic1 .triang2{
   left: 410px;
   top: 52px;
 }
 #h4fic1 .line {
   position: absolute;
-  left: 175px;
-  top: 25px;
-  width: 330px;
-  height: 132px;
+  left: 26%;
+  top: -40px;
+  width: 135px;
 }
 #h4fic2{
-  width: 270px;opacity: 0;
+  width: 38%;
   height: 100px;
   position: absolute;
-  top: 24%;
-  right: 23%;
+  margin-top: 245%;
+  left: 5%;
 }
 #h4fic2 .triang2{
   left: -310px;
@@ -395,17 +405,18 @@
 }
 #h4fic2 .line{
   position: absolute;
-  left: -104%;
-  top: 25px;
-width: 269px;
-  height: 113px;
+  position: absolute;
+  left: 25%;
+  top: 20%;
+  width: 110%;
+  clip-path: inset(0px 0px 0px 3px);
 }
 #h4fic3{
-  width: 270px;opacity: 0;
+  width: 36%;
   height: 100px;
   position: absolute;
-  top: 66%;
-  right: 18%;
+  margin-top: 277%;
+  right: 0%;
 }
 #h4fic3 .triang2{
   left: -283px;
@@ -414,10 +425,9 @@ width: 269px;
 }
 #h4fic3 .line{
   position: absolute;
-  left: -89%;
-  top: 17px;
-width: 237px;
-  height: 157px;
+  right: 40%;
+  top: 74%;
+  width: 120%;
 }
 
 

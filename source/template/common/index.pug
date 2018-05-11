@@ -1,4 +1,14 @@
 block content
+#mobmenu
+    #mob_inn
+        ul
+            li
+                a(href='#') Зафакол
+            li
+                a(href='http://zafakol.thehost.top/assets/img/Zafacol_PIL_.pdf' target="_blank") Инструкция
+            li
+                a(href='#') Где найти
+    #mobclose
 #topMenu
     #topMenu_block
         #topMenu_inn.flex
@@ -8,6 +18,16 @@ block content
                     | для регуляции
                     br
                     | работы кишечника
+            ul#header_nav__lang.flex
+                li#lang_ru.active
+                    a(href='#') RU
+                li#delimiter
+                li#lang_ukr
+                    a(href='#') UKR
+            #header_nav__burger
+                span
+                span
+                span
             //#header_nav.flex
             //    ul#header_nav__items.flex
             //        li#nav_item1
@@ -36,12 +56,12 @@ block content
         include section2.pug
     #section3.section
         include section3.pug
-    //#section4.section
-    //    include section4.pug
-    //#section5.section
-    //    include section5.pug
-    //#section6.section
-    //    include section6.pug
-    //#section7.section
-    //    include section7.pug
+    #section4.section
+        include section4.pug
+    #section5.section
+        include section5.pug
+    #section6.section
+        include section6.pug
+    #section7.section
+        include section7.pug
 

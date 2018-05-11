@@ -4,21 +4,25 @@ position: relative;
   float: left;
 }
 /* block 3 */
-#ftext_3{opacity: 0; margin-top: 50px;    position: absolute;
-  left: 13%;}
-#diraman2{    right: 15%;
-  width: 254px;
-  height: 240px;
+#ftext_3{opacity: 1;    margin-top: 24%;
   position: absolute;
-  top: 45%;-moz-transform: scale(-1, 1);
+  left: 37%;}
+
+#ftext_3.dbl{
+  margin-top: 210%;
+}
+#diraman2{    right: 10%;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 48%;-moz-transform: scale(-1, 1);
   -webkit-transform: scale(-1, 1);
   -o-transform: scale(-1, 1);
   transform: scale(-1, 1);
   filter: FlipH;
   -ms-filter: "FlipH";}
-#dira2{width:254px;height:240px;position:absolute;}
-#man2{width:243px;height:145px;position:absolute;top:80px;left:20px;transform:scale(0);}
-#man3 svg{transform:translate3d(0px, 0px, 0px);}
+#dira2{width:150px;height:150px;position:absolute;}
+#man2{width:150px;height:150px;position:absolute;top:17px;left:20px;}
 
 #ftext_3 h1{text-transform: uppercase;
   background: -webkit-linear-gradient(left, #e43e43, #fb8d3a 33.3%, #ffffff 66.6%, #ffffff);
@@ -29,31 +33,30 @@ position: relative;
   background-repeat: no-repeat;
   -webkit-transition: background 2.5s ease;
   transition: background 2.5s ease;
-  width: 430px;position: absolute;
+ position: absolute;
   display: block;
-  top: 100px;    left: 14%;
   color: #fff;}
 
 /* icon 4_1 */
 
-#icons_21{    width: 125px;
-  height: 125px;
+#icons_21{    width: 100px;
+  height: 100px;
   position: absolute;
-  top: 40%;
-  left: 15%;}
+  top: 25%;
+  left: 6%;}
 #icon_21_txt{
-  font-size: 18px;
+  @include fontsmall();
   color: #0b5a6d;
   position: absolute;
-  top: 50%;
-  left: -30%;
-  z-index: -1;
+  width: 100%;
+  top: 110%;
+  left: -10%;
   text-align: right;
 }
 #icons_21 svg{
   overflow: visible;
 }
-#icon_21_txt_inn{opacity: 0;}
+#icon_21_txt_inn{opacity: 1;}
 .icon_4_1_st_0{fill:#FFFFFF;}
 .icon_4_1_st1{opacity:0.3;fill:url(#SVGID_10_);}
 .icon_4_1_st2{opacity:0.3;fill:url(#SVGID_10_);}
@@ -61,123 +64,78 @@ position: relative;
 .icon_4_1_st3{fill:none;stroke:url(#SVGID_10_);stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 .icon_4_1_st4{fill:none;stroke:url(#SVGID_10_);stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 
-.icon_4_1_st1, .icon_4_1_st2{opacity:0; transition: all 1s 0.8s ease-in-out;}
-.icon_4_1_st4{ transition: all 1.5s 0.8s ease-in-out;
-  stroke-dasharray: 150;
-  stroke-dashoffset: 150;}
-.icon_4_1_st3{ transition: all 1.3s 0.8s ease-in-out;
-  stroke-dasharray: 120;
-  stroke-dashoffset: 120}
 
 #triang_41{
   position: absolute;
+  position: absolute;
   left: 86px;
-  top: 80px;
-  z-index: -1; opacity: 0;}
+  top: 5px;
+  opacity: 1;
+  transform: rotate(-20deg);}
 #triang_41 .tri{position: absolute;
-  left: 52px;
-  top: 10px;    transform: rotate(85deg);}
-#triang_41 .triline{}
-.ic_4_1_inn_op{opacity:0;transition: all 1s 1.5s ease-in-out;}
+  left: 7%;
+  top: -40%;
+  transform: rotate(85deg);}
+#triang_41 .triline img{    width: 170px;
+  clip-path: inset(0px 80px 0px 0px);}
+.ic_4_1_inn_op{opacity:0.3;}
 
 
-.icon_4_1_st0{ transform-origin: center center;transform: scale3d(0, 0, 0);}
-#gr4_1{ transform-origin: center center;transform: scale3d(0, 0, 0);}
-
-
-#ic_41_1.active #icon_4_1 .ic_4_1_inn{stroke-dashoffset: 0;}
-#ic_41_1.active #icon_4_1 .icon_4_1_st0{  animation-name: bounceIn;
-  animation-duration: 1.5s;
-  animation-timing-function: ease-in-out;
-  animation-fill-mode: forwards;}
-#ic_41_1.active #icon_4_1 #gr4_1{  animation-name: bounceIn;
-  animation-duration: 1.5s;
-  animation-delay: 0.5s;
-  animation-timing-function: ease-in-out;
-  animation-fill-mode: forwards;}
-
-#ic_41_1.active #icon_4_1 .ic_4_1_inn_op{opacity: 0.3;}
 
 /* icon 4_1 end */
 /* icon 4_2 */
-#icons_22{       width: 150px;
-  height: 125px;
+#icons_22{       width: 100px;
+  height: 100px;
   position: absolute;
-  top: 65%;
-  left: 10%;}
+  top: 28%;
+  left: 70%;}
 #icon_22_txt{
-  font-size: 18px;
+  @include fontsmall();
   color: #0b5a6d;
   position: absolute;
-  top: 50%;
-  left: -20%;
-  z-index: -1;
+  width: 100%;
+  top: 85%;
+  left: 10%;
   text-align: left;
 }
-#icon_22_txt_inn{opacity: 0;}
+#icon_22_txt_inn{opacity: 1;}
 
 .icon_4_2_st1{fill:#FFFFFF;}
 .icon_4_2_st5{opacity:0.3;fill:url(#SVGID_11_);}
 .icon_4_2_st2, .icon_4_2_st3, .icon_4_2_st4{fill:none;stroke:url(#SVGID_11_);stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 
 
-.icon_4_2_st5{opacity:0; transition: all 1s 0.8s ease-in-out;}
-.icon_4_2_st3{  transition: all 1.5s 0.8s ease-in-out;
-  stroke-dasharray: 200;
-  stroke-dashoffset: 200;}
-
 #triang_42{
   position: absolute;
-  left: 86px;
-  top: 80px;
-  z-index: -1; opacity: 0;    transform: rotate(30deg);}
+  right: 39%;
+  top: 60%;
+ opacity: 1;    transform: rotate(105deg);}
 #triang_42 .tri{position: absolute;
-  left: 45px;
-  top: 7px;}
-#triang_42 .triline{}
-.icon_4_2_st4, .icon_4_2_st2{
-  transition: all 1s 0.8s ease-in-out;
-  stroke-dasharray: 50;
-  stroke-dashoffset: 50;
-}
+  left: 59px;
+  top: -9px;}
+#triang_42 .triline img{    width: 170px;
+  clip-path: inset(8px 50px 0px 0px);}
 
-.ic_4_2_inn_op{opacity:0;transition: all 1s 1.5s ease-in-out;}
+.ic_4_2_inn_op{opacity:0.3;}
 
-
-.icon_4_2_st0{ transform-origin: center center;transform: scale3d(0, 0, 0);}
-#gr4_2{ transform-origin: center center;transform: scale3d(0, 0, 0);}
-
-
-#ic_41_2.active #icon_4_2 .ic_4_2_inn{stroke-dashoffset: 0;}
-#ic_41_2.active #icon_4_2 .icon_4_2_st0{  animation-name: bounceIn;
-  animation-duration: 1.5s;
-  animation-timing-function: ease-in-out;
-  animation-fill-mode: forwards;}
-#ic_41_2.active #icon_4_2 #gr4_2{  animation-name: bounceIn;
-  animation-duration: 1.5s;
-  animation-delay: 0.5s;
-  animation-timing-function: ease-in-out;
-  animation-fill-mode: forwards;}
-
-#ic_41_2.active #icon_4_2 .ic_4_2_inn_op{opacity: 0.3;}
 /* icon 4_2 end */
 
 /* icon 4_3 */
-#icons_23{    width: 125px;
-  height: 125px;
+#icons_23{    width: 100px;
+  height: 100px;
   position: absolute;
-  top: 30%;
-  right: 35%;}
+  top: 88%;
+  right: 10%;}
 
 #icon_23_txt{
-  font-size: 18px;
+  @include fontsmall();
   color: #0b5a6d;
   position: absolute;
-  top: 50%;
-  right: -20%;
-  z-index: -1;
+  width: 100%;
+  top: 108%;
+  right: -15%;
 }
-#icon_23_txt_inn{opacity: 0;}
+#icon_23_txt_inn{opacity: 1;}
 
 .icon_4_3_st0{}
 .icon_4_3_st1{fill:#FFFFFF;}
@@ -187,73 +145,36 @@ position: relative;
 
 #triang_43{
   position: absolute;
-  right: 86px;
-  bottom: 80px;
-  z-index: -1; opacity: 0;}
+  right: -12%;
+  bottom: -69%;
+  opacity: 1;}
 #triang_43 .tri{position: absolute;
   left: -75px;
   top: -68px;}
-#triang_43 .triline{}
+#triang_43 .triline img{    width: 170px;
+  clip-path: inset(0px 80px 0px 0px);}
+
+.ic_4_3_inn_op{opacity:0.3;}
 
 
-.icon_4_3_st8{opacity:0; transition: all 1s 0.8s ease-in-out;}
-.icon_4_3_st3, .icon_4_3_st4{  transition: all 1.5s 0.8s ease-in-out;
-  stroke-dasharray: 200;
-  stroke-dashoffset: 200;}
-.icon_4_3_st6{
-  transition: all 1.2s 0.8s ease-in-out;
-  stroke-dasharray: 100;
-  stroke-dashoffset: 100;
-}
-.icon_4_3_st7{
-  transition: all 1.4s 0.8s ease-in-out;
-  stroke-dasharray: 150;
-  stroke-dashoffset: 150;
-}
-
-.icon_4_3_st2, .icon_4_3_st5{
-  transition: all 1s 0.8s ease-in-out;
-  stroke-dasharray: 50;
-  stroke-dashoffset: 50;
-}
-
-.ic_4_3_inn_op{opacity:0;transition: all 1s 1.5s ease-in-out;}
-
-
-.icon_4_3_st0{ transform-origin: center center;transform: scale3d(0, 0, 0);}
-#gr4_3{ transform-origin: center center;transform: scale3d(0, 0, 0);}
-
-
-#ic_41_3.active #icon_4_3 .ic_4_3_inn{stroke-dashoffset: 0;}
-#ic_41_3.active #icon_4_3 .icon_4_3_st0{  animation-name: bounceIn;
-  animation-duration: 1.5s;
-  animation-timing-function: ease-in-out;
-  animation-fill-mode: forwards;}
-#ic_41_3.active #icon_4_3 #gr4_3{  animation-name: bounceIn;
-  animation-duration: 1.5s;
-  animation-delay: 0.5s;
-  animation-timing-function: ease-in-out;
-  animation-fill-mode: forwards;}
-
-#ic_41_3.active #icon_4_3 .ic_4_3_inn_op{opacity: 0.3;}
 
 /* icon 4_3  end*/
 /* icon 4_4  */
-#icons_24{    width: 140px;
-  height: 125px;
+#icons_24{    width: 100px;
+  height: 100px;
   position: absolute;
-  top: 50%;
-  right: 44%;}
+  top: 74%;
+  left: 4%;}
 
 #icon_24_txt{
-  font-size: 18px;
+  @include fontsmall();
   color: #0b5a6d;
   position: absolute;
-  top: 50%;
-  right: -55%;
-  z-index: -1;
+  width: 100%;
+  top: 94%;
+  right: -15%;
 }
-#icon_24_txt_inn{opacity: 0;}
+#icon_24_txt_inn{opacity: 1;}
 .icon_4_4_st0{fill:#ffffff;}
 .icon_4_4_st2{opacity:0.3;fill:url(#SVGID_13_);}
 .st1{fill:none;stroke:url(#SVGID_13_);stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
@@ -261,66 +182,41 @@ position: relative;
 
 #triang_44{
   position: absolute;
-  right: 71px;
-  bottom: 45px;
-  z-index: -1; opacity: 0;}
+  right: -80%;
+  top: -5px;
+  opacity: 1;
+  transform: rotate(92deg);
+}
 #triang_44 .tri{position: absolute;    transform: rotate(45deg);
-  left: -75px;
+  left: 0px;
   top: -68px;}
 #triang_44 .triline{}
+#triang_44 .triline img{    width: 170px;
+  clip-path: inset(10px 0px 68px 0px);
+  transform: rotate(233deg);}
 
-.icon_4_4_st2{opacity:0; transition: all 1s 0.8s ease-in-out;}
-.icon_4_4_st3{
-  transition: all 1s 0.8s ease-in-out;
-  stroke-dasharray: 50;
-  stroke-dashoffset: 50;
-}
-.icon_4_4_st4{
-  transition: all 1.4s 0.8s ease-in-out;
-  stroke-dasharray: 150;
-  stroke-dashoffset: 150;}
+.ic_4_4_inn_op{opacity:0.3;}
 
-
-.ic_4_4_inn_op{opacity:0;transition: all 1s 1.5s ease-in-out;}
-
-
-.icon_4_4_st0{ transform-origin: center center;transform: scale3d(0, 0, 0);}
-#gr4_4{ transform-origin: center center;transform: scale3d(0, 0, 0);}
-
-
-#ic_41_4.active #icon_4_4 .ic_4_4_inn{stroke-dashoffset: 0;}
-#ic_41_4.active #icon_4_4  .icon_4_4_st0{  animation-name: bounceIn;
-  animation-duration: 1.5s;
-  animation-timing-function: ease-in-out;
-  animation-fill-mode: forwards;}
-#ic_41_4.active #icon_4_4  #gr4_4{  animation-name: bounceIn;
-  animation-duration: 1.5s;
-  animation-delay: 0.5s;
-  animation-timing-function: ease-in-out;
-  animation-fill-mode: forwards;}
-
-#ic_41_4.active #icon_4_4 .ic_4_4_inn_op{opacity: 0.3;}
 
 /* icon 4_4  end*/
 /* icon 4_5  */
-#icons_25{    width: 125px;
-  height: 125px;
+#icons_25{    width: 100px;
+  height: 100px;
   position: absolute;
-  top: 68%;
-  right: 52%;
+  top: 38%;
+  right: 66%;
 ;}
 
 #icon_25_txt{
-  font-size: 18px;
+  @include fontsmall();
   color: #0b5a6d;
   position: absolute;
-  top: 50%;
-  right: -35%;
-  z-index: -1;
+  width: 100%;
+  top: 106%;
+  right: -15%;
 }
-#icon_25_txt_inn{opacity: 0;}
+#icon_25_txt_inn{opacity: 1;}
 .icon_4_5_st0{opacity:0.3;fill:url(#SVGID_14_);}
-.icon_4_5_st1{}
 .icon_4_5_st2{fill:#FFFFFF;}
 .icon_4_5_st3{fill:none;stroke:url(#SVGID_14_);stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 .icon_4_5_st4{fill:none;stroke:url(#SVGID_14_);stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
@@ -328,46 +224,24 @@ position: relative;
 
 #triang_45{
   position: absolute;
-  right: 71px;
-  bottom: 45px;
-  z-index: -1; opacity: 0;}
-#triang_45 .tri{position: absolute;    transform: rotate(45deg);
-  left: -75px;
-  top: -68px;}
-#triang_45 .triline{}
-
-
-.icon_4_5_st0{opacity:0; transition: all 1s 0.8s ease-in-out;}
-.icon_4_5_st3, .icon_4_5_st4{
-  transition: all 1s 0.8s ease-in-out;
-  stroke-dasharray: 50;
-  stroke-dashoffset: 50;
+  left: 7px;
+  top: 81%;
+  opacity: 1;
+  transform: rotate(-138deg);}
+#triang_45 .tri{position: absolute;
+  transform: rotate(45deg);
+  left: 33px;
+  top: 64px;
 }
-.icon_4_5_st4{
-  transition: all 1.4s 0.8s ease-in-out;
-  stroke-dasharray: 150;
-  stroke-dashoffset: 150;}
+#triang_45 .triline img {
+  width: 170px;
+  clip-path: inset(0px 80px 0px 0px);
+  transform: rotate(-180deg);
+}
 
 
-.ic_4_5_inn_op{opacity:0;transition: all 1s 1.5s ease-in-out;}
+.ic_4_5_inn_op{opacity:0.3;}
 
-
-.icon_4_5_st1{ transform-origin: center center;transform: scale3d(0, 0, 0);}
-#gr4_5{ transform-origin: center center;transform: scale3d(0, 0, 0);}
-
-
-#ic_41_5.active #icon_4_5 .ic_4_5_inn{stroke-dashoffset: 0;}
-#ic_41_5.active #icon_4_5 .icon_4_5_st1{  animation-name: bounceIn;
-  animation-duration: 1.5s;
-  animation-timing-function: ease-in-out;
-  animation-fill-mode: forwards;}
-#ic_41_5.active #icon_4_5 #gr4_5{  animation-name: bounceIn;
-  animation-duration: 1.5s;
-  animation-delay: 0.5s;
-  animation-timing-function: ease-in-out;
-  animation-fill-mode: forwards;}
-
-#ic_41_5.active #icon_4_5 .ic_4_5_inn_op{opacity: 0.3;}
 #ic_41_5 svg{overflow: visible;}
 /* icon 4_5  end*/
 
