@@ -8,6 +8,15 @@
   position: relative;
   width: 100%;
   display: inline-block;
+  & h2{
+    font-size: 25px;
+    font-weight: normal;
+    font-family: 'PT Sans', sans-serif;
+    text-align: center;
+    color: #2f508d;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+  }
 }
 .content-map {
 
