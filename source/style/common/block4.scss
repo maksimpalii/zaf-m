@@ -281,6 +281,17 @@
   position: absolute;
   margin-top: 131%;
   right: 5%;
+  width: 49%;
+  height: 100px;
+  position: absolute;
+  margin-top: 131%;
+  right: 0;
+  margin-right: 5px;
+  & .thdop{
+    width: 60%;
+    float: right;
+
+  }
 }
 
 #h4ic4 .thd{text-align: right;}
@@ -292,7 +303,7 @@
 }
 #h4ic4 .line{
   position: absolute;
-  left: -55%;
+  left: -15%;
   top: -21%;
   width: 110px;
   height: 81px;

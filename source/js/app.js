@@ -135,6 +135,20 @@ $("#header_nav__burger").click(function() {
     $('#mobmenu').addClass('active');
 });
 
+$("#mob_inn ul li a").click(function(e) {
+
+    $('#mobmenu').removeClass('active');
+    //console.log(this.className);
+    if (this.className){
+        e.preventDefault();
+        // console.log('class yes');
+        $('html, body').animate({
+            scrollTop: $('#' + this.className).offset().top
+        }, 1000);
+    }
+
+});
+/*
 $("#mob_inn ul li:first-child a").click(function(e) {
     e.preventDefault();
     $('#mobmenu').removeClass('active');
@@ -183,6 +197,7 @@ $("#mob_inn ul li:nth-child(7) a").click(function(e) {
         scrollTop: $("#section7").offset().top
     }, 1000);
 });
+*/
 
 $('.fbutt').click(function (event) {
     event.preventDefault();
