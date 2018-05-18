@@ -61,57 +61,6 @@ $("#button_share").on("click",function(){
     return false;
 });
 
-/*
-$('#spis_1_h_inn').click(function () {
-    $('#spis_2').velocity({opacity: 0}, {duration: 500, easing: 'easeInSine'});
-    $('#spis_3').velocity({opacity: 0}, {
-        duration: 500, easing: 'easeInSine', complete: function () {
-            $('#spis_1_tx').fadeIn("slow");
-        }
-    });
-
-});
-
-$('#spis_1 .close').click(function () {
-    $('#spis_1_tx').fadeOut("slow");
-    $('#spis_2').velocity({opacity: 1}, {duration: 500, easing: 'easeInSine'});
-    $('#spis_3').velocity({opacity: 1}, {duration: 500, easing: 'easeInSine'});
-});
-
-$('#spis_2_h_inn').click(function () {
-    $('#spis_1').velocity({marginTop: -225, opacity: 0}, {duration: 500, easing: 'easeInSine'});
-    $('#spis_3').velocity({opacity: 0}, {
-        duration: 500, easing: 'easeInSine', complete: function () {
-            $('#spis_2_tx').fadeIn("slow");
-        }
-    });
-
-});
-
-$('#spis_2 .close').click(function () {
-    $('#spis_2_tx').fadeOut("slow");
-    $('#spis_1').velocity({marginTop: 0, opacity: 1}, {duration: 500, easing: 'easeInSine'});
-    $('#spis_3').velocity({opacity: 1}, {duration: 500, easing: 'easeInSine'});
-});
-
-$('#spis_3_h_inn').click(function () {
-    $('#spis_1').velocity({marginTop: -365, opacity: 0}, {duration: 500, easing: 'easeInSine'});
-    $('#spis_2').velocity({opacity: 0}, {
-        duration: 500, easing: 'easeInSine', complete: function () {
-            $('#spis_3_tx').fadeIn("slow");
-        }
-    });
-
-});
-
-$('#spis_3 .close').click(function () {
-    $('#spis_3_tx').fadeOut("slow");
-    $('#spis_1').velocity({marginTop: 0, opacity: 1}, {duration: 500, easing: 'easeInSine'});
-    $('#spis_2').velocity({opacity: 1}, {duration: 500, easing: 'easeInSine'});
-
-});
-
-*/
 
 $(document).ready(function($) {
     $('#accordion').find('.accordion-toggle').click(function(){
@@ -139,6 +88,7 @@ $("#mob_inn ul li a").click(function(e) {
 
     $('#mobmenu').removeClass('active');
     //console.log(this.className);
+
     if (this.className){
         e.preventDefault();
         // console.log('class yes');
@@ -148,57 +98,29 @@ $("#mob_inn ul li a").click(function(e) {
     }
 
 });
-/*
-$("#mob_inn ul li:first-child a").click(function(e) {
-    e.preventDefault();
-    $('#mobmenu').removeClass('active');
-    $('html, body').animate({
-        scrollTop: $("#section2").offset().top
-    }, 1000);
+
+$("#menu-mobile-menu li").click(function(e) {
+
+    if ($(this).hasClass( "sectionto" )){
+        e.preventDefault();
+        var test = $(this).find("a").attr('href').substr(1);
+        $('#mobmenu').removeClass('active');
+        $('html, body').animate({
+                    scrollTop: $('#' + test).offset().top
+                }, 1000);
+            }
+
+    // $('#mobmenu').removeClass('active');
+    // console.log($(this).find("a").attr('href'));
+    // if (this.className){
+    //     e.preventDefault();
+    //     // console.log('class yes');
+    //     $('html, body').animate({
+    //         scrollTop: $('#' + this.className).offset().top
+    //     }, 1000);
+    // }
+
 });
-$("#mob_inn ul li:nth-child(2) a").click(function(e) {
-    e.preventDefault();
-    $('#mobmenu').removeClass('active');
-    $('html, body').animate({
-        scrollTop: $("#section3").offset().top
-    }, 1000);
-});
-
-$("#mob_inn ul li:nth-child(3) a").click(function(e) {
-    e.preventDefault();
-    $('#mobmenu').removeClass('active');
-    $('html, body').animate({
-        scrollTop: $("#section4").offset().top
-    }, 1000);
-});
-
-
-$("#mob_inn ul li:nth-child(4) a").click(function(e) {
-    e.preventDefault();
-    $('#mobmenu').removeClass('active');
-    $('html, body').animate({
-        scrollTop: $("#section5").offset().top
-    }, 1000);
-});
-
-
-$("#mob_inn ul li:nth-child(5) a").click(function(e) {
-    e.preventDefault();
-    $('#mobmenu').removeClass('active');
-    $('html, body').animate({
-        scrollTop: $("#section6").offset().top -50
-    }, 1000);
-});
-
-$("#mob_inn ul li:nth-child(7) a").click(function(e) {
-    e.preventDefault();
-    $('#mobmenu').removeClass('active');
-    $('html, body').animate({
-        scrollTop: $("#section7").offset().top
-    }, 1000);
-});
-*/
-
 $('.fbutt').click(function (event) {
     event.preventDefault();
     $('html, body').animate({
